@@ -1,4 +1,3 @@
-from testclass import Test
 
 def is_prime(n):
     if not isinstance(n, int): return False
@@ -12,6 +11,3 @@ def is_prime(n):
             if n % x == 0:
                 return False
         return True
-
-test = Test()
-test.test_prime(is_prime)

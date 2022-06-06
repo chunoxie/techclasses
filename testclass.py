@@ -10,3 +10,5 @@ class Test(object):
         assert f(13) == True
 
         print("Test cases passed!")
+    # Note that we did not use pytest here. 
+    # It was included for informational purposes.
