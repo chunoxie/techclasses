@@ -1,6 +1,6 @@
 import pytest
 
-class Test(object):
+class Test:
     def test_prime(self, f):
         assert f(1) == False
         assert f(3) == True
@@ -9,9 +9,17 @@ class Test(object):
         assert f(1000) == False
         assert f(13) == True
 
-        print("Test cases passed!")
+        print("\nTest cases for is_prime function passed!")
     # Note that we did not use pytest here. 
     # It was included for informational purposes.
 
-    def test_array(self, f):
-        pass
+    def test_array(self, arr):
+        arr.append(5)
+        arr.append(7)
+        arr.append(10)
+        assert len(arr) == 3
+        assert arr[0] == 5
+        assert arr[-1] == 10
+        assert arr[1] == 7
+
+        print("\nTest cases for dynamic arrays passed!")
