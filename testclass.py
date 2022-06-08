@@ -42,3 +42,10 @@ class Test:
         assert ana(s3, s4) == True
 
         print("\nTest cases for anagram passed!")
+
+    def test_array_pair(self, ap):
+        assert ap([1, 3, 2, 2, 1, 0, 4, 4, 0], 4) == {(1, 3), (0, 4), (2, 2)}
+        assert ap([1, 3, 2, 2, 1, 0, 4, 4], 4) == {(1, 3), (0, 4), (2, 2)}
+        assert ap([1, 3, 2, 2, 1], 4) == {(1, 3), (2, 2)}
+
+        print("\nTest cases for array pair passed!")
