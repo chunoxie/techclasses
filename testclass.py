@@ -12,3 +12,6 @@ class Test(object):
         print("Test cases passed!")
     # Note that we did not use pytest here. 
     # It was included for informational purposes.
+
+    def test_array(self, f):
+        pass
