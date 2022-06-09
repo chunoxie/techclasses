@@ -13,6 +13,10 @@ def find_element(arr1, arr2):
 def find_element2(arr1, arr2):
     d = collections.defaultdict(int)
 
+    # this saves us from using if statements in the loop before incrementing value:
+    # if num in d:
+    # if num in d.keys():
+
     for num in arr2:
         d[num] += 1
 
