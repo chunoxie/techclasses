@@ -9,5 +9,7 @@ def unique_characters2(string):
             return False
         else:
             char_set.add(letter)
-            
+
     return True
+
+    "abcdea"

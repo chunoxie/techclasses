@@ -10,7 +10,7 @@ def pair_sum(arr, target):
         if second_pair not in seen:
             seen.add(number)
         else:
-            output.add( ((min(number, second_pair)), max(number, second_pair)) )
+            output.add( (min(number, second_pair), max(number, second_pair)) )
 
     return output
     #return '\n'.join(map(str, list(output)))
