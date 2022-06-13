@@ -9,7 +9,6 @@ def min_abs_diff(arr):
 
     for item in result:
         print(item[-2], item[-1])
-    #return result
 
 lst = [-2, 1, 4, 8, 2, 9, -10, 0]
 
