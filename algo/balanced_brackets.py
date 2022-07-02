@@ -15,12 +15,16 @@ def balanced_brackets(strings):
         if strings[i] in brackets:
             stack.append(strings[i])
         else:
-            closing = stack.pop()
-            if strings[i] != brackets[closing]:
+            try:
+                closing = stack.pop()
+                if strings[i] != brackets[closing]:
+                    return False
+            except Exception as e:
+                # print("Exception occured...", e)
                 return False
         i += 1
     
     return stack == []
 
-lst = "()[{}]]"
+lst = "(())))"
 print(balanced_brackets(lst))
